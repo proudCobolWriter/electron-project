@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLessThan } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import type { FC } from "react";
 
 import vegetables from "../../../assets/categories/vegetables.jpg";
@@ -45,11 +46,10 @@ const Categories: FC = () => {
 				<Button
 					buttonstyle="FooterStyle"
 					className="return-general-button"
-					onClick={() => {
-						window.location.href = "/";
-					}}
 				>
-					<FontAwesomeIcon icon={faLessThan} />
+					<Link to="/">
+						<FontAwesomeIcon icon={faLessThan} />
+					</Link>
 				</Button>
 				Categories
 			</h1>

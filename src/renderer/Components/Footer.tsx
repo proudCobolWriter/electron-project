@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
@@ -15,11 +16,10 @@ const FooterComponent: FC = () => {
 				<Button
 					buttonstyle="FooterStyle"
 					className="main-footer-button"
-					onClick={() => {
-						window.location.href = "/";
-					}}
 				>
-					<FontAwesomeIcon icon={faHouse} />
+					<Link to="/">
+						<FontAwesomeIcon icon={faHouse} />
+					</Link>
 				</Button>
 				<Button
 					buttonstyle="FooterStyle"

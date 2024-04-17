@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 import {
 	faCartShopping,
 	faLessThan,
@@ -17,14 +18,10 @@ const Catalogue: FC = () => {
 
 	return (
 		<div className="inditem-container">
-			<Button
-				buttonstyle="FooterStyle"
-				className="return-general-button"
-				onClick={() => {
-					window.location.href = "/categories/vegetables/";
-				}}
-			>
-				<FontAwesomeIcon icon={faLessThan} />
+			<Button buttonstyle="FooterStyle" className="return-general-button">
+				<Link to="/categories/vegetables/">
+					<FontAwesomeIcon icon={faLessThan} />
+				</Link>
 			</Button>
 			<div className="inditem-preview-shadow">
 				<img

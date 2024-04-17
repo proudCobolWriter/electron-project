@@ -7,6 +7,15 @@
 	cursor: pointer;
 }
 
+.main-footer-button a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.main-footer-button a:focus {
+	color: inherit;
+}
+
 .footer-button svg {
 	font-size: 2em;
 }
@@ -20,6 +29,15 @@
 	position: absolute;
 	z-index: 10;
 	color: white;
+}
+
+.return-general-button a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.return-general-button a:focus {
+	color: inherit;
 }
 
 .like-button,
@@ -61,6 +79,15 @@
 .like-button[class*="inditem-button"] {
 	padding: 10px 25px 10px 25px;
 	font-size: 5vw;
+}
+
+.order-button a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.order-button a:focus {
+	color: inherit;
 }
 
 .order-button {

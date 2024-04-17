@@ -1,4 +1,5 @@
 import { type FC, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import icon from "../../../assets/icon.png";
 
 import Button from "../Components/Button";
@@ -27,11 +28,13 @@ const App: FC = () => {
 				transitionRef.current.className =
 					"menu-background-transition opacity1 animateOpacity";
 				setTimeout(() => {
-					backgroundRef.current!.src =
-						wallpapers[(currentWallpaper + 1) % 5];
+					if (transitionRef.current && backgroundRef.current) {
+						backgroundRef.current.src =
+							wallpapers[(currentWallpaper + 1) % 5];
 
-					transitionRef.current!.className =
-						"menu-background-transition opacity0";
+						transitionRef.current.className =
+							"menu-background-transition opacity0";
+					}
 				}, 0.5e3);
 			}
 		}, 5e3);
@@ -73,13 +76,8 @@ const App: FC = () => {
 					Local offers<span>✨</span>
 				</h1>
 				<h3>Never miss out on the latest local products</h3>
-				<Button
-					buttonstyle="BlueStyle"
-					onClick={() => {
-						window.location.href = "/categories";
-					}}
-				>
-					Browse
+				<Button buttonstyle="BlueStyle">
+					<Link to="/categories">Browse</Link>
 				</Button>
 			</section>
 		</>

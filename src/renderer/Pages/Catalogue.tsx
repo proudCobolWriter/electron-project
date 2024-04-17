@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLessThan } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import type { FC } from "react";
 
 import SearchBar from "../Components/SearchBar";
@@ -52,11 +53,10 @@ const Catalogue: FC = () => {
 				<Button
 					buttonstyle="FooterStyle"
 					className="return-general-button"
-					onClick={() => {
-						window.location.href = "/categories/";
-					}}
 				>
-					<FontAwesomeIcon icon={faLessThan} />
+					<Link to="/categories/">
+						<FontAwesomeIcon icon={faLessThan} />
+					</Link>
 				</Button>
 				Vegetables
 			</h1>
