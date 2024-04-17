@@ -1,0 +1,65 @@
+:root {
+	--inditem-border-radius: 20px;
+}
+
+.inditem-preview {
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow:
+		rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.inditem-preview-shadow {
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	box-shadow:
+		rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+		rgba(0, 0, 0, 0.35) 0px -80px 36px -28px inset;
+}
+
+.inditem-text-container {
+	position: absolute;
+	top: calc(30% - var(--inditem-border-radius));
+	background-color: var(--main-bg-color);
+	border-radius: var(--inditem-border-radius) var(--inditem-border-radius);
+	padding: calc(var(--inditem-border-radius) * 2) 10px 0 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.inditem-country {
+	color: black;
+	margin-top: 10px;
+	font-size: 6vw;
+}
+
+.inditem-description {
+	color: #747474;
+	font-size: 5vw;
+	font-optical-sizing: auto;
+}
+
+.inditem-weight {
+	color: rgb(68, 206, 33);
+	font-size: 4vw;
+}
+
+.inditem-title {
+	font-size: 6vw;
+}
+
+.inditem-pricetag {
+	font-size: 6vw;
+}
+
+.inditem-buttons-container {
+	align-content: center;
+	justify-content: space-evenly;
+}

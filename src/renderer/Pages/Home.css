@@ -1,0 +1,83 @@
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.header {
+	width: 100vw;
+	height: calc(25vh + 5px);
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-radius: 5px;
+	position: relative;
+	z-index: 100;
+}
+
+h1 span {
+	position: relative;
+	top: -0.5em;
+	font-size: 0.75em;
+}
+
+.offers-section h3 {
+	text-align: center;
+}
+
+.opacity0 {
+	opacity: 0;
+}
+
+.opacity1 {
+	opacity: 1;
+}
+
+.animateOpacity {
+	transition: opacity 0.5s ease-in-out;
+}
+
+.background-container {
+	position: absolute;
+	top: 25vh;
+	width: 100%;
+}
+
+.menu-background {
+	position: relative;
+	z-index: -1;
+	height: 40vh;
+	width: 100%;
+	object-fit: cover;
+}
+
+.menu-background-shadow {
+	box-shadow:
+		rgba(50, 50, 93, 0.25 * 3) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3 * 3) 0px 18px 36px -18px inset;
+}
+
+.menu-background-transition {
+	z-index: -1;
+	height: 40vh;
+	width: 100%;
+	object-fit: cover;
+	position: fixed;
+	top: 25vh;
+	left: 0;
+	width: 100%;
+}
+
+.offers-section {
+	position: absolute;
+	top: calc(25vh + 40vh - 10px);
+	background-color: var(--main-bg-color);
+	border-radius: 10px;
+	width: 100vw;
+	height: 35vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+	padding: 20px 0 0 0;
+}

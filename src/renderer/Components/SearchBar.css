@@ -1,0 +1,19 @@
+.gg-search {
+	color: #b3b3b3;
+	position: relative;
+	top: 25px;
+	left: 15px;
+}
+
+.search-bar {
+	padding: 10px;
+	border-radius: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #b3b3b3;
+	background-color: white;
+	outline: none;
+	width: 90%;
+	margin-bottom: 20px;
+	text-indent: 25px;
+}

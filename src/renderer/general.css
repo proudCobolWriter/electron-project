@@ -1,0 +1,77 @@
+/* General styling */
+
+:root {
+	/* Variables */
+	--main-bg-color: rgb(246, 245, 245);
+	--secondary-color: rgb(118, 245, 125);
+	--text-color-primary: rgb(41, 14, 83);
+	--icon-color-primary: rgb(117, 58, 207);
+
+	/* Theme related */
+
+	color-scheme: light;
+
+	/* Font related */
+
+	font-family: Roboto, Poppins, Lato, Inter, "Open Sans", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+.height-width-100 {
+	height: 100%;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--text-color-primary);
+}
+
+h1 {
+	font-size: 2em;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(214, 214, 214, 0.5);
+	border-radius: 10px;
+}
+
+.flex {
+	display: flex;
+}
+
+/* Responsive media queries */
+
+/*
+for example:
+@media (prefers-color-scheme: light) {
+	:root {
+		color: var(--main-bg-color);
+		background-color: #ffffff;
+	}
+}
+*/

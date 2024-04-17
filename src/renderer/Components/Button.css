@@ -1,0 +1,126 @@
+.footer-button {
+	padding: 20px;
+	color: var(--icon-color-primary);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.footer-button svg {
+	font-size: 2em;
+}
+
+.return-general-button {
+	color: var(--text-color-primary);
+	padding: 10px;
+}
+
+.inditem-container .return-general-button {
+	position: absolute;
+	z-index: 10;
+	color: white;
+}
+
+.like-button,
+.cart-button {
+	cursor: pointer;
+	padding: 7px 25px 7px 25px;
+	border-radius: 5px;
+	font-size: 4vw;
+	border: 1px solid #dbdbdb;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.like-button {
+	background-color: white;
+	color: #b3b3b3;
+	transition: color 0.2s ease-in-out;
+}
+
+.cart-button {
+	background-color: #dbdbdb;
+	color: white;
+}
+
+/*.like-button[class*="heart-icon-liked"] {
+	color: red;
+	background: url("https://cssanimation.rocks/images/posts/steps/heart.png")
+		no-repeat;
+	cursor: pointer;
+}*/
+
+.like-button[class*="heart-icon-liked"] {
+	color: red;
+}
+
+.cart-button[class*="inditem-button"],
+.like-button[class*="inditem-button"] {
+	padding: 10px 25px 10px 25px;
+	font-size: 5vw;
+}
+
+.order-button {
+	align-items: center;
+	appearance: none;
+	background-image: radial-gradient(
+		100% 100% at 100% 0,
+		#5adaff 0,
+		#5468ff 100%
+	);
+	margin-top: calc(30vh * 0.3);
+	border: 0;
+	border-radius: 6px;
+	box-shadow:
+		rgba(45, 35, 66, 0.4) 0 2px 4px,
+		rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+		rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-weight: bold;
+	height: 48px;
+	justify-content: center;
+	line-height: 1;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	transition:
+		box-shadow 0.15s,
+		transform 0.15s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	will-change: box-shadow, transform;
+	font-size: 18px;
+}
+
+.order-button:focus {
+	box-shadow:
+		#3c4fe0 0 0 0 1.5px inset,
+		rgba(45, 35, 66, 0.4) 0 2px 4px,
+		rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+		#3c4fe0 0 -3px 0 inset;
+}
+
+.order-button:hover {
+	box-shadow:
+		rgba(45, 35, 66, 0.4) 0 4px 8px,
+		rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+		#3c4fe0 0 -3px 0 inset;
+	transform: translateY(-2px);
+}
+
+.order-button:active {
+	box-shadow: #3c4fe0 0 3px 7px inset;
+	transform: translateY(2px);
+}
