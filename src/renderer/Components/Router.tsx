@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import type { FC } from "react";
 
 import Home from "../Pages/Home";
@@ -8,7 +8,7 @@ import IndividualItem from "../Pages/IndividualItem";
 
 const RouterComponent: FC = () => {
 	return (
-		<Router>
+		<HashRouter>
 			<Routes>
 				<Route path="/*" element={<Home />} />
 				<Route path="/categories" element={<Categories />} />
@@ -18,7 +18,7 @@ const RouterComponent: FC = () => {
 					element={<IndividualItem />}
 				/>
 			</Routes>
-		</Router>
+		</HashRouter>
 	);
 };
 
